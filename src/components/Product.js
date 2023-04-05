@@ -3,6 +3,7 @@ import React from "react";
 import "./Product.css";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../store/cart-slice";
+import Images from '../Assets/1.jpg';
 
 
 import Card from '@mui/material/Card';
@@ -28,8 +29,8 @@ const Product = ({ name, id, imgURL, price }) => {
       <CardMedia
         component="img"
         alt="green iguana"
-        height="140"
-        image={imgURL}
+        height="222"
+        image={Images}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -40,8 +41,7 @@ const Product = ({ name, id, imgURL, price }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button onClick={handleClick} size="small">Add to Cart</Button>
+        <Button onClick={handleClick} size="large" variant="outlined" style={{color: 'green'}}> Add to Cart</Button>
       </CardActions>
     </Card>
       </div>

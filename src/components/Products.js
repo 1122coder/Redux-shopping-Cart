@@ -1,11 +1,10 @@
 import React from "react";
 import Product from "./Product";
-import img1 from '../Assets/1.jpg'
 const DUMMY_PRODUCTS = [
   {
     id: 1,
     name: "MacBook",
-    imgURL:"../Assets/1.jpg",
+    imgURL: '../Assets/1.jpg',
     price: 25,
   },
   {
