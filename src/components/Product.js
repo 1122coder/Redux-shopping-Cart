@@ -30,6 +30,7 @@ const Product = ({ name, id, imgURL, price }) => {
         component="img"
         alt="green iguana"
         height="222"
+        backgroundCover='no-repeat'
         image={Images}
       />
       <CardContent>
